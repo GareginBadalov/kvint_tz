@@ -2,18 +2,16 @@ version: "2.1"
 networks:
   network:
 services:
-#  report_making_service:
-#    container_name: report_making_service
-#    build:
-#      context: .
-#      dockerfile: Dockerfile
-##    volumes:
-##      - .:/app/
-#    depends_on:
-#      - rabbitmq
-#    restart: always
-#    networks:
-#      - network
+  report_making_service:
+    container_name: report_making_service
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - rabbitmq
+    restart: always
+    networks:
+      - network
   rabbitmq:
     container_name: rabbit_report_maker
     image: rabbitmq:3.10.7-management
