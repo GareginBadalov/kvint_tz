@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "kvint-tz"
+version = "0.1.0"
+description = ""
+authors = ["garickbadalov <garick.badalov@gmail.com>"]
+readme = "README.md"
+packages = [{include = "kvint_tz"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aio-pika = "^9.3.0"
+loguru = "^0.7.2"
+aiofiles = "^23.2.1"
+ijson = "^3.2.3"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
